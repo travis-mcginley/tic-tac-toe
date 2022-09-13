@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Balinese&display=swap');
+
+:root {
+  font-family: 'Noto Sans Balinese', sans-serif;
+  --hf-color: #1F2937;
+  --small-text-color: #E5E7EB;
+  --large-text-color: #F9FAF8;
+  --icon-color: #3882F6;
+  --border-radius: 10px;
+  --form-input-width: 25rem;
+}
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  /* Allow footer to remain at the bottom */
+  position: relative;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-bottom: 100px; */
+}
+
+.header {
+  font-family: 'Shadows Into Light', cursive, Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer {
+  color: var(--small-text-color);
+  background-color: var(--hf-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: 1rem 0;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  gap: 10px;
+}
